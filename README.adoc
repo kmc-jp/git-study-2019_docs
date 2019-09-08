@@ -1,4 +1,5 @@
 = git-study-2019_docs
+
 Git/GitHub勉強会で使う資料。AsciiDocで書いてreveal.jsで見れる形にします（asciidoctorなどで文書化してもOK）
 
 == Prerequisites
