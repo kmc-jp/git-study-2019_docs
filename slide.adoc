@@ -1,0 +1,128 @@
+:revealjs_theme: night
+
+= Git&GitHub勉強会
+
+2019/09/09 +
+ikubaku +
+mail: hide4d51@gmail.com
+
+== お品書き
+* バージョン管理について
+* GitとGitHub
+* 環境構築
+* Git-Itによるチュートリアル1
+* 休憩
+* Git-Itによるチュートリアル2
+* Tips & Tricks
+* 関連することの紹介
+
+== バージョン管理について
+stub
+
+== GitとGitHub
+stub
+
+== 環境構築
+
+=== ダウンロードするもの
+* テキストエディタ
+* GitHub Desktop
+* Git-It
+
+=== テキストエディタ
+* 好きなもの
+* 困ったら https://code.visualstudio.com/[Visual Studio Code]
+
+=== GitHub Desktop
+https://desktop.github.com/
+
+=== Git-It
+https://github.com/jlord/git-it-electron/releases
+
+ダウンロードできたら解凍する
+
+== チュートリアル1
+
+=== 進め方
+* Git-Itを見ながら個別に進めていきます
+* `Commit To It` 完了まで進めてください
+
+=== `GitHubbin`
+* まずはアカウントを作る
+
+=== GitHub Organization
+* GitHubの団体ユーザ
+* メンバーでリポジトリを共有するときに便利
+
+=== Organizationへの参加
+* TODO: もし教える側で団体に入れたいならここに説明を書く
+
+== 休憩
+??:?? から再開
+
+== チュートリアル2
+
+=== 進め方
+* Git-Itを見ながら個別に進めていきます
+* `Remote Control` から始めてください
+
+== Tips & Tricks
+
+=== `.gitattribute`
+* 開発環境によっては自動的に作成されることがあってGitの設定が上書きされてしまうことがある
+* 設定と違う動作をするときは疑ってみましょう
+
+=== `core.autocrlf`
+* 改行コードの自動変換を行うかどうか
+* `false` でやるのが主流らしいが......
+* メンバーがどのOSを使っているか把握しておくと良い
+
+=== UnityとGit
+* Unityプロジェクトで使うときはちょっと設定が必要
+. Edit->Project Settings->Editor を選ぶ
+. Version Control->Mode: Visible Meta Files
+. Asset Serialization->Mode: Force Text
+. Line Ending For New Scripts->Mode: Windows or Unix
+
+Windowsしかないなら"Windows"でよいはず
+
+最近のバージョンだとない設定があるのでそれは無視
+
+=== GUIツール
+* GitHub Desktopなど、GUIでリポジトリを操作するプログラムがある
+* ものによってはGitHubやGitLabなどと連携できる
+* 細かい操作がいらないときはこちらのほうが便利かもしれない
+
+=== エディタ/IDEのGit/GitHub拡張
+* エディタやIDEがGitやGitHubに対する操作をサポートしている場合がある
+* Visual Studio Code（拡張が必要）, IntelliJ IDEAなど
+
+== 関連することの紹介
+
+=== GitHub WikiとProject
+* GitHubの機能
+* Wikiライクなページの作成とプロジェクト管理ツール
+
+=== GitHub Pages
+* これもGitHubの機能
+* HTML/Markdownなどから静的なWebページを生成してホストしてくれる
+* Webアプリは動かせない（NetlifyやGCPでやろう）
+
+=== CIサービス
+* リポジトリに対する操作を検出してビルドやテスト、デプロイを行うサービス
+* Travis CI、CircleCIなど
+* 自分でCIを行うシステムを用意することもできる（Jenkinsなど）
+
+=== Git LFS
+* サイズの大きい非テキストファイルを分けて保存することでリモートリポジトリからのフェッチなどを効率良くできるようにするGitの拡張
+* GitHubはGit LFSの使用に対応している
+* https://git-lfs.github.com/ からインストールできる
+* 共同開発するシステム全てに入れる必要があるので注意
+
+== スタッフクレジット
+* ikubaku(polaris@KMC)
+
+== ライセンス
+このスライドは https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License]で提供されます
+
+== おわり
