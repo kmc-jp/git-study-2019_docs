@@ -1,0 +1,22 @@
+= git-study-2019_docs
+Git/GitHub勉強会で使う資料。AsciiDocで書いてreveal.jsで見れる形にします（asciidoctorなどで文書化してもOK）
+
+== Prerequisites
+* ruby
+* bundler
+
+== Set up
+[source,shell]
+----
+$ bundle config --local github.https true
+$ bundle --path=.bundle/gems --binstubs=.bundle/.bin
+----
+
+== Build
+[source,shell]
+----
+$ bundle exec asciidoctor-revealjs -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0 slide.adoc
+----
+
+== License
+`LICENSE` を参照
